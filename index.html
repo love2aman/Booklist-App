@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+    <style>
+
+        h1{
+            color:blueviolet;
+            font-family:'Segoe UI' ;
+                     
+        }
+        th{
+            color:crimson;
+            
+        }
+
+        tbody{
+            color:white;
+            }
+        
+        form{
+            color:gray;
+        }
+
+        
+        .success, .error {
+            color: white;
+            padding: 5px;
+            margin: 5px 0 15px 0;
+        }
+
+        .success{
+            background: green;
+        }
+
+        .error{
+            background: red;
+        }
+
+       
+    </style>
+</head>
+<body background="C:\Users\Asus\Desktop\PROJECT-Book-List-with-ES6-Vanilla-JavaScript\BookList\img.jpg">
+    
+    <div class="container" >
+        <h1>Add Book</h1>
+        <form  id="book-form">
+            <div>
+                <label for="title">Title</label>
+                <input placeholder="Enter book title or name..." type="text" id="title" class="u-full-width">
+            </div>
+            <div>
+                <label for="author">Author</label>
+                <input placeholder="Enter author name..." type="text" id="author" class="u-full-width">
+            </div>
+            <div>
+                <label for="isbn">ISBN</label>
+                <input placeholder="Enter ISBN..." type="text" id="isbn" class="u-full-width">
+            </div>
+
+            <div>
+                <input type="Submit" value="submit"  class="u-full-width" style="Font-size: 20px; width: 100%; Background-Color:DarkGreen; color:Black; text-shadow:deepskyblue;">
+            </div>
+        </form>
+        <br>
+
+            <h2 style="text-align: Center; color:firebrick; font-family: cursive; ">Book List</h2>
+          <!-- Table For Book-list-->
+        <table class="u-full-width" frame=hsides rules=rows>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th></th>
+                </tr>
+            </thead>
+                 <tbody id="book-list">
+
+                 </tbody>
+        </table>
+    </div>
+
+    <script src="appes6.js"></script>
+</body>
+</html>
